@@ -1,5 +1,5 @@
 # Arch_V2
-start from scratch my arch configuration
+Start from scratch my arch configuration, because my current config is SHIT
 
 ---
 # Kernel installation: (Arch)
@@ -9,7 +9,6 @@ start from scratch my arch configuration
 ## Systemd
 
 ---
-
 # Post installation
 
 ## System administration
@@ -29,7 +28,6 @@ Chat: https://web.libera.chat/gamja/?channels=#sway
 
 ## Multimedia
 ### Sound system: (PipeWire)
-### Shell: (FISH)
 
 ## Networking
 
@@ -42,8 +40,11 @@ Chat: https://web.libera.chat/gamja/?channels=#sway
 ### GTK theme
 
 ## Console improvement
+### Shell: (FISH)
 ### Shell Emulator: (Alacritty)
 ### Windows Switcher | Ssh-launcher | Run Dialog | dmenu: (ROFI)
 ### Neovim
 
+---
+# Additional applications
 
