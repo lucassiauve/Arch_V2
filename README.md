@@ -16,6 +16,8 @@ Start from scratch my arch configuration, because my current config is SHIT
 ## Package management: (Pacman->Yay)
 
 ## Booting
+### Boot loader: (Grub)
+### Dual boot: (Windows)
 
 ## Graphical interface
 ### Windows Manager: (Sway)
