@@ -8,6 +8,8 @@ Start from scratch my arch configuration, because my current config is SHIT
 
 ## Systemd
 
+## Environment variables
+
 ---
 # Post installation
 
