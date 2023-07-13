@@ -13,8 +13,8 @@ Arch must be installed before Windows, because EFI system partition created by W
 ## Partition: (1T SSD)
 - EFI system partition -> 1 GiB (with [grub](#Booting) boot loader)
 - Swap partition -> 16 GiB
-- Linux root partition -> 492 GiB
-- Windows root partition -> 491 GiB
+- Linux root partition -> 500 GiB
+- Windows root partition -> 483 GiB
 
 ## Swap end ZRam
 
