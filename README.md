@@ -2,7 +2,7 @@
 Start from scratch my arch configuration, because my current config is SHIT.
 
 ---
-# Dual-boot: (Arch - Windows11)
+# Linux before Windows
 Arch must be installed before Windows, because EFI system partition created by Windows is to short for multiple OS (100 MiB). In Addition Windows creates three partitions in a row (Windows Recovery Environment - Microsoft Reserved Partition - Microsoft basic data), so it's more difficult to resize an OS partition when it's between those partitions.
 > Arch Wiki for [dual-boot Arch-Windows](https://wiki.archlinux.org/title/Dual_boot_with_Windows)
 
@@ -13,7 +13,8 @@ Arch must be installed before Windows, because EFI system partition created by W
 ## Partition: (1T SSD)
 - EFI system partition -> 1 GiB (with [grub](#Booting) boot loader)
 - Swap partition -> 16 GiB
-- root partition -> 983 GiB (
+- Linux root partition -> 492 GiB
+- Windows root partition -> 491 GiB
 
 ## Swap end ZRam
 
