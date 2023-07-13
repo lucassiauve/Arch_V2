@@ -11,7 +11,7 @@ Arch must be installed before Windows, because EFI system partition created by W
 > Arch Wiki [Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 
 ## Partition: (1T SSD)
-- EFI system partition -> 1 GiB (with grub boot loader)
+- EFI system partition -> 1 GiB (with [grub](#Arch_V2) boot loader)
 - Swap partition -> 16 GiB
 - root partition -> 983 GiB (
 
@@ -35,8 +35,11 @@ Arch must be installed before Windows, because EFI system partition created by W
 ## Graphical interface
 ### Windows Manager: (Sway)
 Update: https://github.com/swaywm/sway/releases
+
 Source Code: https://github.com/swaywm/sway
+
 Wiki: https://github.com/swaywm/sway/wiki
+
 Chat: https://web.libera.chat/gamja/?channels=#sway
 
 ## Power management
