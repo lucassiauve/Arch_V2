@@ -10,7 +10,7 @@ Arch must be installed before Windows, because EFI system partition created by W
 # Kernel installation: (Arch)
 > Arch Wiki [Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 
-## Partition: (1T SSD)
+## [Partition: (1T SSD)](#partition)
 - EFI system partition -> 1 GiB (with [grub](#Booting) boot loader)
 - Swap partition -> 16 GiB
 - Linux root partition -> 500 GiB
@@ -75,7 +75,7 @@ Chat: https://web.libera.chat/gamja/?channels=#sway
 
 ---
 # Windows installation: (Windows 11)
-Install windows OS on the [remaining partition](#Partition:-(1T-SSD)), it will detect automatically and use the EFI partition, without creating a new one.
+Install windows OS on the [remaining partition](#partition), it will detect automatically and use the EFI partition, without creating a new one.
 
 ## Time standard
 Due to the dual-boot, the Windows clock will be 2h late. To solve this issue, open a powershell with administrator right and run this command:
