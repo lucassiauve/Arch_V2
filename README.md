@@ -4,7 +4,7 @@ Start from scratch my arch configuration, because my current config is SHIT.
 ---
 # Linux before Windows
 Arch must be installed before Windows, because EFI system partition created by Windows is to short for multiple OS (100 MiB). In Addition Windows creates three partitions in a row (Windows Recovery Environment - Microsoft Reserved Partition - Microsoft basic data), so it's more difficult to resize an OS partition when it's between those partitions.
-> Arch Wiki for [dual-boot Arch-Windows](https://wiki.archlinux.org/title/Dual_boot_with_Windows)
+> Arch Wiki [dual-boot Arch-Windows](https://wiki.archlinux.org/title/Dual_boot_with_Windows)
 
 ---
 # Kernel installation: (Arch)
@@ -86,7 +86,7 @@ If you are having issues with the offset of the time, try reinstalling **tzdata*
 ```
 timedatectl set-timezone Europe/Paris
 ```
-> Arch wiki for [System time](https://wiki.archlinux.org/title/System_time#UTC_in_Microsoft_Windows)
+> Arch wiki [System time](https://wiki.archlinux.org/title/System_time#UTC_in_Microsoft_Windows)
 
 ## Priority applications
 ![**LOL**](https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png)
