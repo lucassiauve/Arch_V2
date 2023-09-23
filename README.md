@@ -46,7 +46,9 @@ Chat: https://web.libera.chat/gamja/?channels=#sway
 ## Power management
 
 ## Multimedia
-### Sound system: (PipeWire)
+### Sound system: (Alsa - PipeWire)
+- [Alsa](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture) is a [Sound System](https://wiki.archlinux.org/title/Sound_system) that work without any other additional features, the sound card just need to be unmute (be careful, for multiple cards sounds, select the default card and save this in the system config file ```/etc/asound.conf```).
+- On top of Alsa, a [Sound servers](https://wiki.archlinux.org/title/Sound_system#Sound_servers) such as [PipeWire](https://wiki.archlinux.org/title/PipeWire) and [PulseAudio](https://wiki.archlinux.org/title/PulseAudio) can offer additional features and support more complex audio configuration (in my case, will be Pipewire). 
 
 ## Networking
 
