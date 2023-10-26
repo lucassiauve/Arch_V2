@@ -91,4 +91,4 @@ timedatectl set-timezone Europe/Paris
 > Arch wiki [System time](https://wiki.archlinux.org/title/System_time#UTC_in_Microsoft_Windows)
 
 ## Priority applications
-![**LOL**](https://www.leagueoflegends.com/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png)
+![**LOL**](https://static.wikia.nocookie.net/leagueoflegends/images/7/77/League_of_Legends_logo.png)
