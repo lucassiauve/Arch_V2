@@ -1,0 +1,70 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+"PLugin manager
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'hardmode'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'vim-airline/vim-airline'
+
+call vundle#end()
+filetype plugin indent on
+
+"vim theme
+syntax on
+set background=dark
+colorscheme gruvbox
+
+"hardmode autocall
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
+"vim-snipmate
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsSnippetDirectories='~/.vim/UltiSnips'
+let g:UltiSnipsEditSplit='tabdo'
+
+set number number
+set linebreak	
+set showbreak=+++
+set textwidth=100
+set showmatch	
+set visualbell
+
+set nohlsearch
+set smartcase	
+set ignorecase
+set incsearch
+
+set autoindent	
+set shiftwidth=4
+set smartindent	
+set softtabstop=4
+set tabstop=4
+set cc=80
+set expandtab
+
+
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+set backspace=indent,eol,start
+
+"File
+set autoread
+set autowrite
+
+" Miscellaneaous
+set list
+set listchars=tab:»\ ,trail:·
+
+" add line in normal mode
+noremap <silent> <s-space> :exe "normal a".nr2char(getchar())<CR>
