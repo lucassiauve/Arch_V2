@@ -21,11 +21,16 @@ Arch must be installed before Windows, because EFI system partition created by W
 ## Systemd
 
 ## Environment variables
+> Arch Wiki [General Recommendation](https://wiki.archlinux.org/title/General_recommendations)
 
 ---
 # Post installation
 
 ## System administration
+- [ ] Users and groups
+- [ ] Security
+- [ ] Service management
+- [ ] System maintenance
 
 ## Package management: (Pacman->Yay)
 
