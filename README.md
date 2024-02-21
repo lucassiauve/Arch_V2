@@ -64,7 +64,7 @@ Chat: https://web.libera.chat/gamja/?channels=#sway
 ## Appearance
 
 ### Font: (Source Code Pro SemiBold)
-(Font configuration)[https://wiki.archlinux.org/title/Font_configuration], 
+[Font configuration](https://wiki.archlinux.org/title/Font_configuration), 
 
 ### GTK theme
 
@@ -72,7 +72,7 @@ Chat: https://web.libera.chat/gamja/?channels=#sway
 
 ### Shell: (FISH)
 
-### Shell Emulator: ((Alacritty)[https://alacritty.org/config-alacritty.html])
+### Shell Emulator: ([Alacritty](https://alacritty.org/config-alacritty.html))
 
 ### Windows Switcher | Ssh-launcher | Run Dialog | dmenu: (ROFI)
 
