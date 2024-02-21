@@ -64,6 +64,7 @@ Chat: https://web.libera.chat/gamja/?channels=#sway
 ## Appearance
 
 ### Font: (Source Code Pro SemiBold)
+(Font configuration)[https://wiki.archlinux.org/title/Font_configuration], 
 
 ### GTK theme
 
