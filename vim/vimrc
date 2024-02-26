@@ -1,0 +1,95 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+"PLugin manager
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'tpope/vim-vinegar'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'junegunn/fzf'
+    Plugin 'sonph/onehalf'
+    Plugin 'neoclide/coc.nvim'
+
+call vundle#end()
+filetype plugin indent on
+
+"vim airline
+set ttimeoutlen=50
+
+"vim theme
+syntax on
+set background=dark
+colorscheme gruvbox
+
+set rnu
+set number
+set linebreak	
+set showbreak=+++
+set textwidth=100
+set showmatch	
+set visualbell
+
+set hlsearch
+set smartcase	
+set ignorecase
+set incsearch
+
+set splitright
+set splitbelow
+
+set autoindent
+set shiftwidth=4
+set smartindent	
+set softtabstop=4
+set tabstop=4
+set expandtab
+set cc=80
+
+
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+"File
+set autoread
+set autowrite
+
+" Miscellaneaous
+"set list " Enable listchars
+"set listchars=tab:»\ ,trail:·,eol:$ " Indicators for invisible characters
+
+" add line in normal mode
+noremap <silent> <s-space> :exe "normal a".nr2char(getchar())<CR>
+
+" disbale .viminfo
+set viminfo=""
+
+
+""" coc configuration
+set signcolumn=yes
+
+" Use tab for trigger completion with characters ahead and navigate
+" NOTE: There's always complete item selected by default, you may want to enable
+" no select by `"suggest.noselect": true` in your configuration file
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
